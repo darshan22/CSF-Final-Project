@@ -16,31 +16,31 @@ class Net(nn.Module):
         if self.activation == "sigmoid":
            sigmoid = nn.Sigmoid()
            out = sigmoid(out)
-       elif self.activation == "relu":
+        elif self.activation == "relu":
            relu = nn.ReLU()
            out = relu(out)
-       elif self.activation == "tanh":
+        elif self.activation == "tanh":
            tanh = nn.Tanh()
            out = tanh(out)
-       elif self.activation == "softmax":
+        elif self.activation == "softmax":
            soft_max = nn.Softmax()
            out = soft_max(out)
-       else:
+        else:
            pass
         out = self.fc2(out)
         if self.activation == "sigmoid":
            sigmoid = nn.Sigmoid()
            out = sigmoid(out)
-       elif self.activation == "relu":
+        elif self.activation == "relu":
            relu = nn.ReLU()
            out = relu(out)
-       elif self.activation == "tanh":
+        elif self.activation == "tanh":
            tanh = nn.Tanh()
            out = tanh(out)
-       elif self.activation == "softmax":
+        elif self.activation == "softmax":
            soft_max = nn.Softmax()
            out = soft_max(out)
-       else:
+        else:
            pass
         out = self.fc3(out)
         return out
