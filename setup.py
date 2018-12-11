@@ -3,7 +3,7 @@ from setuptools import setup
 with open("README.md","r") as f:
 	long_description = f.read()
 
-setup(name = "refiner",
+setup(name = "NN",
 	version = "1.0",
 	author = "Darshan Kasat & Shivam Thassu",
 	author_email = "darshankasat22@gwu.edu",
