@@ -16,8 +16,8 @@ class CNN(nn.Module):
             nn.ReLU(),
             nn.MaxPool2d(2))
         self.layer3 = nn.Sequential(
-            nn.Conv2d(32, 32, kernel_size=5, padding=2),
-            nn.BatchNorm2d(32),
+            nn.Conv2d(32, 64, kernel_size=5, padding=2),
+            nn.BatchNorm2d(64),
             nn.ReLU(),
             nn.MaxPool2d(2))
         self.fc = nn.Linear(7 * 7 * 32, 10)
