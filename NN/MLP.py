@@ -28,6 +28,19 @@ class Net(nn.Module):
        else:
            pass
         out = self.fc2(out)
-        out = self.relu2(out)
+        if self.activation == "sigmoid":
+           sigmoid = nn.Sigmoid()
+           out = sigmoid(out)
+       elif self.activation == "relu":
+           relu = nn.ReLU()
+           out = relu(out)
+       elif self.activation == "tanh":
+           tanh = nn.Tanh()
+           out = tanh(out)
+       elif self.activation == "softmax":
+           soft_max = nn.Softmax()
+           out = soft_max(out)
+       else:
+           pass
         out = self.fc3(out)
         return out
