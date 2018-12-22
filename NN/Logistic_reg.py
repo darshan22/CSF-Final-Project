@@ -1,4 +1,4 @@
-#@author Shivam Thassu
+#Reference: https://github.com/amir-jafari/Deep-Learning
 import torch
 import torch.nn as nn
 
